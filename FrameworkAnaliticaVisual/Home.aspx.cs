@@ -110,12 +110,6 @@ namespace FrameworkAnaliticaVisual
                 }
             }
         }
-
-        protected void upCanvas_Load(object sender, EventArgs e)
-        {
-            ScriptManager.RegisterStartupScript(this, GetType(), "ddlGraficos", "tipoDiagrama('" + ddlGraficos.SelectedValue + "');", true);
-        }
-
         protected void btnAgregarEnlace_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(ddlEnlaceCanvas.SelectedValue) || !string.IsNullOrEmpty(ddlEnlaceTabla.SelectedValue))
